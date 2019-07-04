@@ -23,3 +23,13 @@
 Note :
 * The above username/password needs to be entered in Jenkins to Deploy war in Tomcat
 
+
+#### Create a Webhook  in Github for Project Repository
+* Settings/ Webhook => Add Webhook
+* Payload URL : http://ec2-34-224-214-24.compute-1.amazonaws.com:8080/github-webhook/  ( Jenkins Server URL )
+* Content Type : application/json
+* Secret: 
+* Events : push 
+
+
+
