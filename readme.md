@@ -1,1 +1,19 @@
-test2
+#### Install Tomcat in EC2 instance
+* Tomcat 8.0
+
+#### Update manager app - webapps/manager/META-INF/context.xml
+* Comment RemoteAddr section to access tomcat from Jenkins
+```
+<Context antiResourceLocking="false" privileged="true" >
+<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
+-->
+</Context>
+```
+
+#### Add user in tomcat ( conf/tomcat-users.xml)
+```
+<user username="naresh" password="naresh" roles="manager-script" />
+<!--<user username="admin" password="admin" roles="manager-gui" />-->
+```
