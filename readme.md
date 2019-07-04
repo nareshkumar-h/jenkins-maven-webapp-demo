@@ -15,5 +15,7 @@
 #### Add user in tomcat ( conf/tomcat-users.xml)
 ```
 <user username="naresh" password="naresh" roles="manager-script" />
-<!--<user username="admin" password="admin" roles="manager-gui" />-->
 ```
+Note :
+* The above username/password needs to be entered in Jenkins to Deploy war in Tomcat
+
