@@ -1,5 +1,9 @@
 #### Install Tomcat in EC2 instance
-* Tomcat 8.0
+* Tomcat 9.0
+
+#### Download and Extract
+*  sudo wget http://mirrors.advancedhosters.com/apache/tomcat/tomcat-9/v9.0.21/bin/apache-tomcat-9.0.21.tar.gz
+*  tar -zxvf apache-tomcat-9.0.21.tar.gz  
 
 #### Update manager app - webapps/manager/META-INF/context.xml
 * Comment RemoteAddr section to access tomcat from Jenkins
