@@ -1,4 +1,4 @@
-#### Install Tomcat in EC2 instance
+#### Install Tomcat in EC2 instance 
 * Tomcat 9.0
 
 #### Download and Extract
